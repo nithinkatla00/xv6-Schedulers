@@ -23,6 +23,12 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+int getptable(int, void*);
+int getppid(void);
+int chpr(int, int);
+int wait2(int*, int*, int*);
+int yield(void);
+int chtickets(int, int);
 
 // ulib.c
 int stat(const char*, struct stat*);
